@@ -1,0 +1,35 @@
+
+// this file defines the Prisma schema for the database
+// it includes the models for universities and their rankings
+generator client {
+  provider = "prisma-client-js"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model universities {
+  id           String           @id @default(cuid())
+  name         String
+  location     String
+  description  String
+  logo         String
+  overall      Float?
+  academicReputation Float?
+  employerReputation Float?
+  facultyStudentRatio Float?
+  sustainability  Float?
+
+  rankings     univ_rankings[]  // one-to-many
+}
+
+model univ_rankings {
+  id             String         @id @default(cuid())
+  universityId   String
+  year           Int
+  rank           Int
+  university     universities   @relation(fields: [universityId], references: [id])
+}
