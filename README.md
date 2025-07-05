@@ -35,6 +35,8 @@ If you wish to see the Database you can run:
 `npx prisma studio`
 
 # Folder Architechture Overview
+
+The diagram below shows an overview of the server folder structure of the important files.
 ![Folder Structure ](https://github.com/user-attachments/assets/2df75d67-2c0d-46a9-98ec-e880fd6f31cc)
 
 
