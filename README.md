@@ -56,4 +56,7 @@ The diagram below shows an overview of the server folder structure of the import
 - **react-apex-chart**s : A Library for rendering charts
 - **prisma** : An ORM for database
 
+![Uploading image.png…]()
+
+
 	
