@@ -54,7 +54,7 @@ The diagram below shows an overview of the server folder structure of the import
 
 ### Additional
 - **react-apex-chart**s : A library for rendering charts
-- **prisma** : An Object Relationship Mapper
+- **prisma** : An Object-Relational Mapper
 
 <img width="818" alt="image" src="https://github.com/user-attachments/assets/7bfeab57-007a-4236-8c97-89d3819f6eee" />
 
